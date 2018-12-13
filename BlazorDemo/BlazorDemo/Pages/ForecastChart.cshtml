@@ -1,0 +1,43 @@
+﻿@page "/charts"
+
+@using AspNetMonsters.Blazor.Geolocation
+@using BlazorDemo.Services
+
+@inject HttpClient Http
+@inject LocationService  LocationService
+
+@functions {
+
+    public WeatherForecast[] forecasts { get; set; }
+
+    Location location;
+
+    protected override async Task OnInitAsync()
+    {
+        location = await LocationService.GetLocationAsync();
+        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    }
+
+}
+
+<h1>Weather forecast charts</h1>
+
+<p>Calculations are being made at:</p>
+<ul>
+    <li>Latitude: @location?.Latitude</li>
+    <li>Longitude: @location?.Longitude</li>
+    <li>Accuracy: @location?.Accuracy</li>
+</ul>
+
+
+<ul>
+
+    @if (forecasts != null)
+    {
+        foreach (var forecast in forecasts)
+        {
+            <li>@forecast.TemperatureC.ToString()</li>
+        }
+    }
+
+</ul>

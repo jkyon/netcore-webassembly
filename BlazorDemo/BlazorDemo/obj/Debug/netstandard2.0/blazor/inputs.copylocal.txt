@@ -1,0 +1,10 @@
+C:\Users\ASUS\.nuget\packages\aspnetmonsters.blazor.geolocation\0.4.0.1017\lib\netstandard2.0\AspNetMonsters.Blazor.Geolocation.dll
+C:\Users\ASUS\.nuget\packages\chartjs.blazor\0.7.0\lib\netstandard2.0\ChartJs.Blazor.dll
+C:\Users\ASUS\.nuget\packages\microsoft.aspnetcore.blazor\0.7.0\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.dll
+C:\Users\ASUS\.nuget\packages\microsoft.aspnetcore.blazor.browser\0.7.0\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.Browser.dll
+C:\Users\ASUS\.nuget\packages\microsoft.aspnetcore.blazor.build\0.7.0\lib\netstandard1.0\Microsoft.AspNetCore.Blazor.TagHelperWorkaround.dll
+C:\Users\ASUS\.nuget\packages\microsoft.extensions.dependencyinjection\2.1.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ASUS\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\2.1.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\.nuget\packages\microsoft.jsinterop\0.7.0\lib\netstandard2.0\Microsoft.JSInterop.dll
+C:\Users\ASUS\.nuget\packages\mono.webassembly.interop\0.7.0\lib\netstandard2.0\Mono.WebAssembly.Interop.dll
+C:\Users\ASUS\.nuget\packages\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll
