@@ -761,11 +761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Documents\\Visual Studio 2017\\Projects\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
+      "projectUniqueName": "E:\\360EventRepo\\WebAssemblyDemo\\netcore-webassembly\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
       "projectName": "BlazorDemo",
-      "projectPath": "C:\\Users\\ASUS\\Documents\\Visual Studio 2017\\Projects\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
+      "projectPath": "E:\\360EventRepo\\WebAssemblyDemo\\netcore-webassembly\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Documents\\Visual Studio 2017\\Projects\\BlazorDemo\\BlazorDemo\\obj\\",
+      "outputPath": "E:\\360EventRepo\\WebAssemblyDemo\\netcore-webassembly\\BlazorDemo\\BlazorDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

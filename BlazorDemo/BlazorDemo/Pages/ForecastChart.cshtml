@@ -1,24 +1,16 @@
-﻿@page "/charts"
-
-@using AspNetMonsters.Blazor.Geolocation
+﻿@using AspNetMonsters.Blazor.Geolocation
 @using BlazorDemo.Services
+@using ChartJs.Blazor.ChartJS.BarChart
+@using ChartJs.Blazor.ChartJS.BarChart.Dataset
+@using ChartJs.Blazor.ChartJS.Common.Legends
+@using ChartJs.Blazor.Charts
+@using ChartJs.Blazor.Util.Color
 
+
+
+@page "/charts"
 @inject HttpClient Http
 @inject LocationService  LocationService
-
-@functions {
-
-    public WeatherForecast[] forecasts { get; set; }
-
-    Location location;
-
-    protected override async Task OnInitAsync()
-    {
-        location = await LocationService.GetLocationAsync();
-        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("sample-data/weather.json");
-    }
-
-}
 
 <h1>Weather forecast charts</h1>
 
@@ -28,16 +20,104 @@
     <li>Longitude: @location?.Longitude</li>
     <li>Accuracy: @location?.Accuracy</li>
 </ul>
+<div>
+    <button class="btn btn-primary" onclick="@displayData">Display Forecast</button>
+</div>
+
+<div>
+    <ChartJsBarChart ref="barChart" Config="@barChartConfig" Width="600" Height="300" />
+</div>
 
 
-<ul>
+@functions {
 
-    @if (forecasts != null)
+    string value = default;
+
+    private WeatherForecast[] forecasts { get; set; }
+
+    BarChartConfig barChartConfig;
+    ChartJsBarChart barChart;
+
+    Location location;
+
+    protected override async Task OnInitAsync()
     {
-        foreach (var forecast in forecasts)
-        {
-            <li>@forecast.TemperatureC.ToString()</li>
-        }
+        location = await LocationService.GetLocationAsync();
+        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+
     }
 
-</ul>
+    protected override void OnInit()
+    {
+        barChartConfig = barChartConfig ?? new BarChartConfig
+        {
+            CanvasId = "myBarChartCanvas",
+
+            Options = new BarChartOptions
+            {
+
+                Text = "Sample chart from Blazor",
+                Display = true,
+                Responsive = true,
+                Legend = new Legend
+                {
+                    Position = LegendPosition.BOTTOM.ToString(),
+                    Labels = new Labels
+                    {
+                        UsePointStyle = true
+                    }
+                },
+                Scales = new BarChartOptionsScales
+                {
+                    xAxes = new List<BarChartAxis>
+                    {
+                        new BarChartAxis
+                        {
+                            Stacked = true
+                        }
+                    }.ToArray(),
+                    yAxes = new List<BarChartAxis>
+                    {
+                        new BarChartAxis
+                        {
+                            Stacked = true
+                        }
+                    }.ToArray()
+                }
+            },
+
+
+        };
+    }
+
+    protected override void OnAfterRender()
+    {
+        Console.WriteLine("OnAfterRender - bar");
+        barChart.Reload();
+
+    }
+
+
+    void displayData()
+    {
+        barChartConfig.Data = new BarChartData
+        {
+            Labels = forecasts.Select(x => x.Date.ToShortDateString()).ToList(),
+            Datasets = new List<BaseBarChartDataset>
+            {
+                new BarChartDataset
+                {
+                    Label = "Date vs Celcius",
+                    BackgroundColor = ColorUtil.RandomColorString(),
+                    BorderColor = ColorUtil.RandomColorString(),
+                    Data = forecasts.Select(x => (object)x.TemperatureC.ToString()).ToList(),
+                },
+
+            }
+        };
+
+        barChart.Reload();
+    }
+
+}
+
