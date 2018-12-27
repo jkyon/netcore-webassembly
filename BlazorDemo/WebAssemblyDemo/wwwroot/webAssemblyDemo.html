@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WebAssembly Demo - Collatz</title>
+</head>
+<body>
+<button onclick='runSumClick()'>Run Sum</button>
+<script>
+    function runSumClick() {
+        alert(wasmExports._Z9sumValuesii(1,2));
+    }
+</script>
+</body>
+<script>
+    // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    var wasmExports;
+
+    fetch('test.wasm')
+        .then(response => response.arrayBuffer())
+        .then(buffer => WebAssembly.instantiate(buffer))
+        .then(results => 
+        {
+            wasmExports = results.instance.exports;
+        });		
+</script>
+</html>

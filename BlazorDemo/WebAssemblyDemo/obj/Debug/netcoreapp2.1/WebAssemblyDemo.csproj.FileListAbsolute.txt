@@ -1,0 +1,14 @@
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\bin\Debug\netcoreapp2.1\WebAssemblyDemo.deps.json
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\bin\Debug\netcoreapp2.1\WebAssemblyDemo.runtimeconfig.json
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\bin\Debug\netcoreapp2.1\WebAssemblyDemo.runtimeconfig.dev.json
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\bin\Debug\netcoreapp2.1\WebAssemblyDemo.dll
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\bin\Debug\netcoreapp2.1\WebAssemblyDemo.pdb
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.csprojAssemblyReference.cache
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.csproj.CoreCompileInputs.cache
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.RazorAssemblyInfo.cache
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.RazorAssemblyInfo.cs
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.AssemblyInfoInputs.cache
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.AssemblyInfo.cs
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.RazorTargetAssemblyInfo.cache
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.dll
+E:\360EventRepo\WebAssemblyDemo\netcore-webassembly\BlazorDemo\WebAssemblyDemo\obj\Debug\netcoreapp2.1\WebAssemblyDemo.pdb
